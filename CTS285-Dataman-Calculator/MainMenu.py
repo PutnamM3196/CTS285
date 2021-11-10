@@ -8,6 +8,7 @@ import MemoryBank as MB
 import NumberGuesser as NG
 import AnswerChecker as AC
 import MissingNumber as MN
+import WipeOut as WO
 def main():
     loop = True
     while loop == True:
@@ -26,7 +27,8 @@ ____________________________________________________
 2. Number Guesser
 3. Memory Bank
 4. Missing Number
-5. Quit
+5. Wipe Out (Unfinished)
+6. Quit
 > """))
 
             if menu == 1:
@@ -38,6 +40,8 @@ ____________________________________________________
             elif menu == 4:
                 MN.missNum()
             elif menu == 5:
+                WO.wipeOut()
+            elif menu == 6:
                 loop = False
             else:
                 print("Error")
