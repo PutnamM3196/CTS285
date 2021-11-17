@@ -27,7 +27,7 @@ ____________________________________________________
 2. Number Guesser
 3. Memory Bank
 4. Missing Number
-5. Wipe Out (Unfinished)
+5. Tournament
 6. Quit
 > """))
 

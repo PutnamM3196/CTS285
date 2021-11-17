@@ -7,7 +7,7 @@ Created on Wed Nov  3 12:50:47 2021
 
 import random as rand
 def tournament():
-    randTime = rand.randint(5, 10)
+    #randTime = rand.randint(5, 10)
     randomizer1 = 1
     randomizer2 = 1
     count = 0
