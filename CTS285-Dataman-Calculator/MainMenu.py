@@ -8,7 +8,8 @@ import MemoryBank as MB
 import NumberGuesser as NG
 import AnswerChecker as AC
 import MissingNumber as MN
-import WipeOut as WO
+import Tournament as TO
+import ElectroFlash as EF
 def main():
     loop = True
     while loop == True:
@@ -28,7 +29,8 @@ ____________________________________________________
 3. Memory Bank
 4. Missing Number
 5. Tournament
-6. Quit
+6. Electro Flash
+7. Quit
 > """))
 
             if menu == 1:
@@ -40,8 +42,10 @@ ____________________________________________________
             elif menu == 4:
                 MN.missNum()
             elif menu == 5:
-                WO.wipeOut()
+                TO.tournament()
             elif menu == 6:
+                EF.electroFlash()
+            elif menu == 7:
                 loop = False
             else:
                 print("Error")
