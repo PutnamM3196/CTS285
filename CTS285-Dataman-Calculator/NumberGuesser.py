@@ -4,7 +4,7 @@ import random
 
 def numGuess():
     loop = True
-    count = 1
+    count = 0
     num = random.randint(9, 100)
     
     lowGuess = random.randint(1, 9)
@@ -33,4 +33,5 @@ def numGuess():
                 print("Error")
         except ValueError:
             print("Please enter a value")
+            numGuess()
             
