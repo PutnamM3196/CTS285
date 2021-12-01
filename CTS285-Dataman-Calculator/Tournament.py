@@ -14,8 +14,8 @@ def tournament():
     playerCorrect = 0
     computerCorrect = 0
     chkloop = True
-    print("\nYou will be playing with a computer player.\n")
-    for i in range(5):
+    print("\nYou will be playing against a computer player.\n")
+    while True:
         chkloop = True
         randomizer1 += rand.randint(5, 10)
         randomizer2 += rand.randint(5, 10)
@@ -40,10 +40,10 @@ def tournament():
                 chkloop = False
         count = 0
     
-        randans1 = ans + 3
-        randans2 = ans - 2
+        randans1 = ans + 1
+        randans2 = ans - 1
         compGuess = rand.randint(randans2, randans1)
-        print(compGuess)
+        
         if ans == compGuess:
             print("Computer got it correct\n")
             computerCorrect += 1
@@ -51,10 +51,12 @@ def tournament():
             print("Computer got the answer wrong\nPassing to you now.")
         print("\nPlayer Score:",playerCorrect)
         print("Computer Score",computerCorrect,"\n")
-    if computerCorrect == 5:
-        print("Computer Won")
-    elif playerCorrect == 5:
-        print("You won!")
+        if computerCorrect == 5:
+            print("Computer Won")
+            return
+        elif playerCorrect == 5:
+            print("You won!")
+            return
         
         
 
